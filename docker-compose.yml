@@ -5,7 +5,7 @@ services:
     environment:
       REDIS_URI: $REDIS_URI
       REDIS_PASSWORD: $REDIS_PASSWORD
-      SESSION: $SESSION
+      SESSION: 1BVtsOKUBuyDTnsvnTPSGDSbSsmroRbVxg_3nlDnM3S8YM8XAorufe7OPjR11MV3hrlgt_z5EV3usnyqwqKAL9oqOJIp4OjmcUbJDZLEnaINMobO1PHVfXG1TIiphathAulJRAA98f6gRs2CtbzqrI5qGsTUYwbSOnQ5Yz9IacxcvtqhVPS_0lmDP0MC4y2P8f1axGTZB_DsjRXCgOzg5Z3pNs4yrl4p4OuiOh0Nr_t3PQJGTNZ7h08bUNwQbVeTEbY4BwUXa8SXhv8DPDMWN0mBOQd_SADm9loS6Q5XdywGsbGpwGlKzyWvhzoIpcM3gTrQRvNo7BNV8BD6MBSlzmwnvTUKoIwQ=
       API_ID: $API_ID  # defaults to None
       API_HASH: $API_HASH  # defaults to None
       MONGO_URI: $MONGO_URI  # defaults to None
