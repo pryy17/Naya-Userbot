@@ -27,7 +27,6 @@ async def openai(event):
     msg = await event.eor("`Processing...`")
     try:
         response = OpenAi().text(question)
-        OpenAi().api_key = "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"
         await msg.eor(f"**Q:** {question}\n\n**A:** {response}")
     except Exception as e:
         await msg.eor(f"**Q:** {question}\n\n**A:** `Error: {e}`")

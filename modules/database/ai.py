@@ -17,7 +17,7 @@ async def get_chatbot_reply(message):
 class OpenAi:
     def text(self, question):
         OPENAI_API = udB.get_key("OPENAI_API")
-        openai.api_key = OPENAI_API
+        openai.api_key = "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"
         response = openai.Completion.create(
             model="text-davinci-003",
             prompt=f"Q: {question}\nA:",
@@ -31,6 +31,6 @@ class OpenAi:
 
     def photo(self, question):
         OPENAI_API = udB.get_key("OPENAI_API")
-        openai.api_key = OPENAI_API
+        openai.api_key = "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"
         response = openai.Image.create(prompt=question, n=1, size="1024x1024")
         return response["data"][0]["url"]
